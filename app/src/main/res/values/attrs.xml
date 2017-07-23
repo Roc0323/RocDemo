@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+
+    <declare-styleable name="LetterSpacingTextView">
+        <attr name="textSpacing" format="float"/>
+        <attr name="text" format="string"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="FlowIndicator">
+        <attr name="count" format="integer" />
+        <attr name="space" format="dimension" />
+        <attr name="point_size" format="dimension" />
+        <attr name="point_seleted_color" format="color|reference" />
+        <attr name="point_normal_color" format="color|reference" />
+        <attr name="point_radius" format="dimension" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="Theme">
+        <attr name="customImageViewStyle" format="reference" />
+    </declare-styleable>
+
+    <!-- 自定义圆角ImageView -->
+    <declare-styleable name="CustomImageView">
+        <attr name="circle" format="boolean" />
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+
+
+
+    <declare-styleable  name="ChatPlayBtn">
+        <attr name="left" format="boolean"/>
+    </declare-styleable>
+
+
+        <declare-styleable name="wheelview">
+            <attr name="gravity">
+                <enum name="center" value="17"/>
+                <enum name="left" value="3"/>
+                <enum name="right" value="5"/>
+            </attr>
+            <attr name="textColorOut" format="color"/>
+            <attr name="textColorCenter" format="color"/>
+            <attr name="dividerColor" format="color"/>
+        </declare-styleable>
+
+
+    <declare-styleable name = "dashedline">
+        <attr name = "lineColor" format= "color" />
+    </declare-styleable >
+
+
+    <!--自定义MLImageView的属性-->
+
+    <declare-styleable name="MLImageView">
+
+        <attr name="shape_type" format="enum">
+            <enum name="round" value="0"/>
+            <enum name="rectangle" value="1"/>
+        </attr>
+
+         <attr name="press_alpha" format="integer"/>
+         <attr name="press_color" format="color"/>
+         <attr name="radius1" format="dimension"/>
+         <attr name="border_width" format="dimension"/>
+         <attr name="border_color" format="color"/>
+
+   </declare-styleable>
+
+    <declare-styleable name="XCRoundRectImageView">
+        <attr name="type6" format="enum">
+            <enum name="circle6" value="1"/>
+            <enum name="round6" value="2"/>
+        </attr>
+        <attr name="radius6" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="DashView1">
+        <attr name="dashWidth1" format="dimension"/>
+        <attr name="lineWidth1" format="dimension"/>
+        <attr name="lineHeight1" format="dimension"/>
+        <attr name="lineColor1" format="color"/>
+        <attr name="dashOrientation1" format="integer"/>
+
+    </declare-styleable>
+
+
+
+</resources>

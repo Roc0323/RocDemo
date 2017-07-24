@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_mine_pop_test).setOnClickListener(this);
         findViewById(R.id.ll_shuibo).setOnClickListener(this);
         findViewById(R.id.btn_okhttp).setOnClickListener(this);
+        findViewById(R.id.btn_add_head).setOnClickListener(this);
     }
 
 
@@ -58,6 +59,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_okhttp:
                 Intent intent_okhttp=new Intent(this,OkHttpFinalActivity.class);
                 startActivity(intent_okhttp);
+                break;
+            case R.id.btn_add_head:
+                Intent intent_recyclerview=new Intent(this,RecyclerViewAddHead.class);
+                startActivity(intent_recyclerview);
                 break;
         }
     }

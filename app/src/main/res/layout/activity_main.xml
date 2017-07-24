@@ -78,7 +78,22 @@
                 android:textSize="18sp" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_add_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView添加头部和尾部"
+                android:textAllCaps="false"
+                android:onClick="onClick"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
     </LinearLayout>
+
 
 
 

@@ -16,6 +16,9 @@
     <color name="ml_red">#ffff0000</color>
 
     <color name="grey_a700">#33616161</color>
+    
+    <color name="white">#ffffff</color>
 
+    <color name="gray">#aaa</color>
 
 </resources>

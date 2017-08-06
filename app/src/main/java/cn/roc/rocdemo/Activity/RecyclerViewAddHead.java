@@ -11,7 +11,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import cn.roc.rocdemo.R;
-import cn.roc.rocdemo.Utils.ImgDataUtil;
+import cn.roc.rocdemo.utils.ImgDataUtil;
 import cn.roc.rocrecyclerviewlib.Divider.BaseItemDecoration;
 import cn.roc.rocrecyclerviewlib.HeaderAndFooter.OnItemClickListener;
 import cn.roc.rocrecyclerviewlib.HeaderAndFooter.OnItemLongClickListener;
@@ -74,7 +74,7 @@ public class RecyclerViewAddHead extends AppCompatActivity {
             }
         });
 //        设置分割线
-        rcv.addItemDecoration(new BaseItemDecoration(this,R.color.colorAccent));
+        rcv.addItemDecoration(new BaseItemDecoration(this,R.color.white));
 
         rcv.setOnItemClickListener(new OnItemClickListener() {
             @Override

@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.ll_shuibo).setOnClickListener(this);
         findViewById(R.id.btn_okhttp).setOnClickListener(this);
         findViewById(R.id.btn_add_head).setOnClickListener(this);
+        findViewById(R.id.btn_qrcode).setOnClickListener(this);
+        findViewById(R.id.btn_nine_gongge).setOnClickListener(this);
     }
 
 
@@ -63,6 +65,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_add_head:
                 Intent intent_recyclerview=new Intent(this,RecyclerViewAddHead.class);
                 startActivity(intent_recyclerview);
+                break;
+            case R.id.btn_qrcode:
+                Intent intent_qrcode=new Intent(this,QrCodeActivity.class);
+                startActivity(intent_qrcode);
+                break;
+            case R.id.btn_nine_gongge:
+                Intent intent_nine_gongge=new Intent(this,NineGongGeAcitivy.class);
+                startActivity(intent_nine_gongge);
                 break;
         }
     }

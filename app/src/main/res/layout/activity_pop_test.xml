@@ -1,46 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="cn.roc.rocdemo.Activity.PopTest"
-    android:gravity="center|bottom"
-    android:orientation="vertical"
-    android:background="#FFE1FF">
+    android:background="#ffffff">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:orientation="vertical">
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="123"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                />
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="456"
-                android:layout_marginTop="38dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"/>
-        </FrameLayout>
-
-
-        <TextView
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+       <ImageView
+           android:id="@+id/iv_image_big_one"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:src="@mipmap/ic_launcher"
+           />
+        <ImageView
+            android:id="@+id/iv_image_big_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="这里有一段话，内容是马上到家奥法李稻葵发家史多浪费钱哦但发卡量sd卡福建路口大发两三点浪费灵山大佛"
-            android:gravity="center"
-            android:layout_gravity="bottom" />
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            />
+        <ImageView
+            android:id="@+id/iv_image_big_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            />
 
 
     </LinearLayout>
 
+    <cn.roc.rocdemo.imagewatcher.ImageWatcher
+        android:id="@+id/iw_watcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </cn.roc.rocdemo.imagewatcher.ImageWatcher>
 
-
-</LinearLayout>
+</FrameLayout>

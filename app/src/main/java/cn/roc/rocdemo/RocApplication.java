@@ -1,6 +1,7 @@
 package cn.roc.rocdemo;
 
 import android.app.*;
+import android.content.Context;
 
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
@@ -11,6 +12,8 @@ import com.lzy.okgo.https.HttpsUtils;
 import com.lzy.okgo.interceptor.HttpLoggingInterceptor;
 import com.lzy.okgo.model.HttpHeaders;
 import com.lzy.okgo.model.HttpParams;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
@@ -30,12 +33,25 @@ import okhttp3.OkHttpClient;
  */
 
 public class RocApplication extends android.app.Application{
+    private   static   RocApplication  application;
+
     @Override
     public void onCreate() {
         super.onCreate();
+        application=this;
         initOkGo();
         initOkHttpFinal();
+        initImageLoader();
     }
+    /*
+    * 初始化ImageLoader
+    * */
+    private void initImageLoader() {
+        ImageLoaderConfiguration configuration = ImageLoaderConfiguration.createDefault(this);
+        ImageLoader.getInstance().init(configuration);
+
+    }
+
     /*
     * 初始化OkHttpFinal
     * */
@@ -140,6 +156,22 @@ public class RocApplication extends android.app.Application{
             //return hostname.equals("server.jeasonlzy.com");
             return true;
         }
+    }
+
+    /**
+     * 得到全局唯一实例
+     * @return
+     */
+    public  static   RocApplication  getAppInstance(){
+        return  application;
+    }
+
+    /**
+     * 根据手机的分辨率从 dp 的单位 转成为 px(像素)
+     */
+    public static int dip2px(Context context, float dpValue) {
+        final float scale = RocApplication.getAppInstance().getResources().getDisplayMetrics().density;
+        return (int) (dpValue * scale + 0.5f);
     }
 
 

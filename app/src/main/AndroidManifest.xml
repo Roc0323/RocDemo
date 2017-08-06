@@ -38,7 +38,9 @@
             android:name=".Activity.PopTest"
             android:theme="@style/base_NoActionBar" />
         <activity android:name=".Activity.OkHttpFinalActivity" />
-        <activity android:name=".Activity.RecyclerViewAddHead"></activity>
+        <activity android:name=".Activity.RecyclerViewAddHead" />
+        <activity android:name=".Activity.QrCodeActivity" />
+        <activity android:name=".Activity.NineGongGeAcitivy"></activity>
     </application>
 
 </manifest>

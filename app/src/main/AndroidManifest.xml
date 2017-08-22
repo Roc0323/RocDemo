@@ -41,6 +41,8 @@
         <activity android:name=".Activity.RecyclerViewAddHead" />
         <activity android:name=".Activity.QrCodeActivity" />
         <activity android:name=".Activity.NineGongGeAcitivy"></activity>
+        <activity android:name=".Activity.TransitionOneActivity"></activity>
+        <activity android:name=".Activity.TransitionTwoActivity"></activity>
     </application>
 
 </manifest>

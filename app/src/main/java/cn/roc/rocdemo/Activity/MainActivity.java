@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_add_head).setOnClickListener(this);
         findViewById(R.id.btn_qrcode).setOnClickListener(this);
         findViewById(R.id.btn_nine_gongge).setOnClickListener(this);
+        findViewById(R.id.btn_activity_transition_animation).setOnClickListener(this);
     }
 
 
@@ -73,6 +74,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_nine_gongge:
                 Intent intent_nine_gongge=new Intent(this,NineGongGeAcitivy.class);
                 startActivity(intent_nine_gongge);
+                break;
+            case R.id.btn_activity_transition_animation:
+                Intent intent_transition=new Intent(this,TransitionOneActivity.class);
+                startActivity(intent_transition);
                 break;
         }
     }

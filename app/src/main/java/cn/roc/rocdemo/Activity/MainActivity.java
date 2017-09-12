@@ -24,12 +24,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_mine_select_photo).setOnClickListener(this);
         findViewById(R.id.btn_mine_coordinator_layout).setOnClickListener(this);
         findViewById(R.id.btn_mine_pop_test).setOnClickListener(this);
-        findViewById(R.id.ll_shuibo).setOnClickListener(this);
         findViewById(R.id.btn_okhttp).setOnClickListener(this);
         findViewById(R.id.btn_add_head).setOnClickListener(this);
         findViewById(R.id.btn_qrcode).setOnClickListener(this);
         findViewById(R.id.btn_nine_gongge).setOnClickListener(this);
         findViewById(R.id.btn_activity_transition_animation).setOnClickListener(this);
+        findViewById(R.id.btn_wechat_popup).setOnClickListener(this);
+        findViewById(R.id.btn_horizontal_scrollView).setOnClickListener(this);
+        findViewById(R.id.btn_share_nine_image).setOnClickListener(this);
     }
 
 
@@ -56,9 +58,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent_pop=new Intent(this,PopTest.class);
                 startActivity(intent_pop);
                 break;
-            case R.id.ll_shuibo:
-                //Toast.makeText(this,"水波效果",Toast.LENGTH_SHORT).show();
-                break;
             case R.id.btn_okhttp:
                 Intent intent_okhttp=new Intent(this,OkHttpFinalActivity.class);
                 startActivity(intent_okhttp);
@@ -78,6 +77,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_activity_transition_animation:
                 Intent intent_transition=new Intent(this,TransitionOneActivity.class);
                 startActivity(intent_transition);
+                break;
+            case R.id.btn_wechat_popup:
+                Intent intent_wechat_popup=new Intent(this,WechatPopupActivity.class);
+                startActivity(intent_wechat_popup);
+                break;
+            case R.id.btn_horizontal_scrollView:
+                Intent intent_horizontal_scrlllview=new Intent(this,HorizontalScrollViewActivity.class);
+                startActivity(intent_horizontal_scrlllview);
+                break;
+            case R.id.btn_share_nine_image:
+                Intent intent_share_nine=new Intent(this,ShareNineImageActivity.class);
+                startActivity(intent_share_nine);
                 break;
         }
     }

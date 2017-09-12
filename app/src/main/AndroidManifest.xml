@@ -40,9 +40,12 @@
         <activity android:name=".Activity.OkHttpFinalActivity" />
         <activity android:name=".Activity.RecyclerViewAddHead" />
         <activity android:name=".Activity.QrCodeActivity" />
-        <activity android:name=".Activity.NineGongGeAcitivy"></activity>
-        <activity android:name=".Activity.TransitionOneActivity"></activity>
-        <activity android:name=".Activity.TransitionTwoActivity"></activity>
+        <activity android:name=".Activity.NineGongGeAcitivy" />
+        <activity android:name=".Activity.TransitionOneActivity" />
+        <activity android:name=".Activity.TransitionTwoActivity" />
+        <activity android:name=".Activity.WechatPopupActivity" />
+        <activity android:name=".Activity.HorizontalScrollViewActivity" />
+        <activity android:name=".Activity.ShareNineImageActivity"></activity>
     </application>
 
 </manifest>

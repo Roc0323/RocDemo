@@ -29,11 +29,12 @@ import static com.yuyh.library.imgsel.R.attr.title;
 
 public class ShareNineImageActivity extends AppCompatActivity {
 
-    private Button btn_share;
+    private Button btn_share_friends_circle;
     private Button btn_get_image;
     private Context mContext;
     private static final int REQUEST_IMAGE_BY_SDCARD = 2050;
     List<File> files=new ArrayList<File>();
+    private Button btn_share_friends;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +51,9 @@ public class ShareNineImageActivity extends AppCompatActivity {
                 setImage();
             }
         });
-        btn_share=(Button)findViewById(R.id.btn_share);
-        btn_share.setOnClickListener(new View.OnClickListener() {
+        btn_share_friends_circle=(Button)findViewById(R.id.btn_share_friends_circle);
+        btn_share_friends=(Button)findViewById(R.id.btn_share_friends);
+        btn_share_friends_circle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -69,6 +71,25 @@ public class ShareNineImageActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btn_share_friends.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                ComponentName comp = new ComponentName("com.tencent.mm",
+                        "com.tencent.mm.ui.tools.ShareImgUI");
+                intent.setComponent(comp);
+                intent.setAction(Intent.ACTION_SEND_MULTIPLE);
+                intent.setType("image/*");
+                intent.putExtra("Kdescription", "一键分享");
+                ArrayList<Uri> imageUris = new ArrayList<Uri>();
+                for (File f : files) {
+                    imageUris.add(Uri.fromFile(f));
+                }
+                intent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, imageUris);
+                startActivity(intent);
+            }
+        });
+
     }
 
     //调用android系统自带的方法

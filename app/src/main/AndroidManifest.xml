@@ -45,7 +45,10 @@
         <activity android:name=".Activity.TransitionTwoActivity" />
         <activity android:name=".Activity.WechatPopupActivity" />
         <activity android:name=".Activity.HorizontalScrollViewActivity" />
-        <activity android:name=".Activity.ShareNineImageActivity"></activity>
+        <activity android:name=".Activity.ShareNineImageActivity" />
+        <activity android:name=".Activity.NiceLabelActivity" />
+        <activity android:name=".Activity.SocketTestActivity" />
+        <activity android:name=".Activity.FileOperationActivity"></activity>
     </application>
 
 </manifest>

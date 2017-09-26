@@ -33,7 +33,6 @@
                 android:layout_height="wrap_content"
                 android:text="多选图片"/>
 
-
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -110,13 +109,20 @@
                 android:id="@+id/btn_qrcode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ScrollView的滑动监听"/>
+                android:text="ScrollView的滑动监听"
+                android:textAllCaps="false"/>
 
             <Button
                 android:id="@+id/btn_nine_gongge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="九宫格"/>
+            <Button
+                android:id="@+id/btn_socket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Socket通信"
+                android:textAllCaps="false"/>
         </LinearLayout>
 
         <LinearLayout
@@ -127,7 +133,7 @@
                 android:id="@+id/btn_wechat_popup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="仿朋友圈点赞评论弹出款效果"/>
+                android:text="仿朋友圈点赞评论效果"/>
             <Button
                 android:id="@+id/btn_horizontal_scrollView"
                 android:layout_width="wrap_content"
@@ -145,6 +151,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="分享九张图片到朋友圈"/>
+            <Button
+                android:id="@+id/btn_nice_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="仿nice标签"/>
+            <Button
+                android:id="@+id/btn_sd_file_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SD卡文件操作"/>
         </LinearLayout>
 
     </LinearLayout>

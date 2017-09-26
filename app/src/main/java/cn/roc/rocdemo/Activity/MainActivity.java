@@ -8,6 +8,9 @@ import android.widget.Toast;
 
 import com.bigkoo.alertview.AlertView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import cn.roc.rocdemo.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -32,6 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_wechat_popup).setOnClickListener(this);
         findViewById(R.id.btn_horizontal_scrollView).setOnClickListener(this);
         findViewById(R.id.btn_share_nine_image).setOnClickListener(this);
+        findViewById(R.id.btn_nice_label).setOnClickListener(this);
+        findViewById(R.id.btn_socket).setOnClickListener(this);
+        findViewById(R.id.btn_sd_file_operation).setOnClickListener(this);
     }
 
 
@@ -89,6 +95,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_share_nine_image:
                 Intent intent_share_nine=new Intent(this,ShareNineImageActivity.class);
                 startActivity(intent_share_nine);
+                break;
+            case R.id.btn_nice_label:
+                Intent intent_nice_label=new Intent(this,NiceLabelActivity.class);
+                startActivity(intent_nice_label);
+                break;
+            case R.id.btn_socket:
+                Intent intent_socket=new Intent(this,SocketTestActivity.class);
+                startActivity(intent_socket);
+                break;
+            case R.id.btn_sd_file_operation:
+                Intent intent_sd_file_operation=new Intent(this,FileOperationActivity.class);
+                startActivity(intent_sd_file_operation);
                 break;
         }
     }

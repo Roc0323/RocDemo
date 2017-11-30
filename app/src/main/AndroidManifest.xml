@@ -49,6 +49,7 @@
         <activity android:name=".Activity.NiceLabelActivity" />
         <activity android:name=".Activity.SocketTestActivity" />
         <activity android:name=".Activity.FileOperationActivity"></activity>
+        <activity android:name=".Activity.MobikeTagActivity"></activity>
     </application>
 
 </manifest>

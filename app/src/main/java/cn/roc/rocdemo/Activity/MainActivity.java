@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_nice_label).setOnClickListener(this);
         findViewById(R.id.btn_socket).setOnClickListener(this);
         findViewById(R.id.btn_sd_file_operation).setOnClickListener(this);
+        findViewById(R.id.btn_mobike_tags).setOnClickListener(this);
     }
 
 
@@ -107,6 +108,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_sd_file_operation:
                 Intent intent_sd_file_operation=new Intent(this,FileOperationActivity.class);
                 startActivity(intent_sd_file_operation);
+                break;
+            case R.id.btn_mobike_tags:
+                Intent intent_mobike_tag=new Intent(this,MobikeTagActivity.class);
+                startActivity(intent_mobike_tag);
                 break;
         }
     }

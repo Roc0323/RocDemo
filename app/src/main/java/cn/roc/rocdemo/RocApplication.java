@@ -175,4 +175,21 @@ public class RocApplication extends android.app.Application{
     }
 
 
+    /**
+     * 得到屏幕总宽度
+     * @return
+     */
+    public int getScreenWidth() {
+        return RocApplication.getAppInstance().getResources().getDisplayMetrics().widthPixels;
+    }
+
+    /**
+     * 得到屏幕总高度
+     * @return
+     */
+    public int getScreenHeight(){
+        return  RocApplication.getAppInstance().getResources().getDisplayMetrics().heightPixels;
+    }
+
+
 }

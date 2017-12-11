@@ -1,4 +1,4 @@
-package cn.roc.rocdemo.Activity;
+package cn.roc.rocdemo.activity;
 
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;

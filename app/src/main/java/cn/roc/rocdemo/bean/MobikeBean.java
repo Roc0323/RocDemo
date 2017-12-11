@@ -1,4 +1,4 @@
-package cn.roc.rocdemo.Bean;
+package cn.roc.rocdemo.bean;
 
 /**
  * Created by Roc on 2017/11/29.

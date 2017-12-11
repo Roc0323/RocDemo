@@ -1,4 +1,4 @@
-package cn.roc.rocdemo.Activity;
+package cn.roc.rocdemo.activity;
 
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;

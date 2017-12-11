@@ -1,4 +1,4 @@
-package cn.roc.rocdemo.Bean;
+package cn.roc.rocdemo.bean;
 
 import java.util.ArrayList;
 import java.util.List;

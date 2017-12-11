@@ -1,20 +1,10 @@
-package cn.roc.rocdemo.Activity;
+package cn.roc.rocdemo.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
-import com.lzy.okgo.OkGo;
-import com.lzy.okgo.cache.CacheMode;
-import com.lzy.okgo.callback.AbsCallback;
-import com.lzy.okgo.callback.Callback;
-import com.lzy.okgo.callback.StringCallback;
-
-import cn.roc.rocdemo.Bean.ConfigBean;
 import cn.roc.rocdemo.R;
-import okhttp3.Call;
-import okhttp3.Response;
 
 public class OkgoActivity extends AppCompatActivity implements View.OnClickListener{
 

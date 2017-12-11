@@ -1,15 +1,9 @@
-package cn.roc.rocdemo.Activity;
+package cn.roc.rocdemo.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
-
-import com.bigkoo.alertview.AlertView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import cn.roc.rocdemo.R;
 
@@ -39,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_socket).setOnClickListener(this);
         findViewById(R.id.btn_sd_file_operation).setOnClickListener(this);
         findViewById(R.id.btn_mobike_tags).setOnClickListener(this);
+        findViewById(R.id.btn_3d_tag).setOnClickListener(this);
+        findViewById(R.id.btn_random_position).setOnClickListener(this);
     }
 
 
@@ -112,6 +108,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_mobike_tags:
                 Intent intent_mobike_tag=new Intent(this,MobikeTagActivity.class);
                 startActivity(intent_mobike_tag);
+                break;
+            case R.id.btn_3d_tag:
+                Intent intent_3d_tag=new Intent(this,Tag3DActivity.class);
+                startActivity(intent_3d_tag);
+                break;
+            case R.id.btn_random_position:
+                Intent intent_random_position=new Intent(this,RandomPositionActivity.class);
+                startActivity(intent_random_position);
                 break;
         }
     }

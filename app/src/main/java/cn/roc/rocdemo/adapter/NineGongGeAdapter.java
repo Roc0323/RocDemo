@@ -1,4 +1,4 @@
-package cn.roc.rocdemo.Adapter;
+package cn.roc.rocdemo.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import cn.roc.rocdemo.Bean.NineGridBean;
+import cn.roc.rocdemo.bean.NineGridBean;
 import cn.roc.rocdemo.R;
 import cn.roc.rocdemo.view.NineGridTestLayout;
 

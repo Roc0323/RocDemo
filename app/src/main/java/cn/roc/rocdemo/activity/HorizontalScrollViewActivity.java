@@ -1,4 +1,4 @@
-package cn.roc.rocdemo.Activity;
+package cn.roc.rocdemo.activity;
 
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import cn.roc.rocdemo.Adapter.HorizontalScrollViewAdapter;
+import cn.roc.rocdemo.adapter.HorizontalScrollViewAdapter;
 import cn.roc.rocdemo.R;
 import cn.roc.rocdemo.view.MyHorizontalScrollView;
 

@@ -15,7 +15,7 @@ import android.view.WindowManager;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 
-import cn.roc.rocdemo.Adapter.HorizontalScrollViewAdapter;
+import cn.roc.rocdemo.adapter.HorizontalScrollViewAdapter;
 
 public class MyHorizontalScrollView extends HorizontalScrollView implements
 		OnClickListener

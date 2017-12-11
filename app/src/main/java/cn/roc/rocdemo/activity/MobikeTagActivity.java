@@ -1,4 +1,4 @@
-package cn.roc.rocdemo.Activity;
+package cn.roc.rocdemo.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -19,7 +19,7 @@ import com.mobike.library.MobikeView;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.roc.rocdemo.Bean.MobikeBean;
+import cn.roc.rocdemo.bean.MobikeBean;
 import cn.roc.rocdemo.R;
 
 /**
@@ -27,6 +27,7 @@ import cn.roc.rocdemo.R;
  */
 
 public class MobikeTagActivity extends Activity{
+    private Context mContext;
     private MobikeView mobikeView;
     private SensorManager sensorManager;
     private Sensor defaultSensor;
@@ -36,12 +37,14 @@ public class MobikeTagActivity extends Activity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mobike_tag);
+        mContext=this;
         mobikeView = (MobikeView) findViewById(R.id.mobike_view);
         initData();
         initViews();
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         defaultSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        //CircleD
 
     }
 
@@ -74,7 +77,6 @@ public class MobikeTagActivity extends Activity{
                 }
             });
         }
-
 
     }
 

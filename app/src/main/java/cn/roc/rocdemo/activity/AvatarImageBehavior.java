@@ -1,4 +1,4 @@
-package cn.roc.rocdemo.Activity;
+package cn.roc.rocdemo.activity;
 
 import android.content.Context;
 import android.support.design.widget.CoordinatorLayout;

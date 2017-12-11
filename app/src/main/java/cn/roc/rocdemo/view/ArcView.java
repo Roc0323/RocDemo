@@ -63,6 +63,7 @@ public class ArcView extends View{
         mPaint.setAntiAlias(true);
         mPaint.setStrokeWidth(10);
         mPaint.setStyle(Paint.Style.FILL);
+
         //起始点
         mStartPoint = new PointF(0, 0);
         //终点

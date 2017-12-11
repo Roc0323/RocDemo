@@ -1,4 +1,4 @@
-package cn.roc.rocdemo.Activity;
+package cn.roc.rocdemo.activity;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import cn.roc.rocdemo.Bean.LabelBean;
+import cn.roc.rocdemo.bean.LabelBean;
 import cn.roc.rocdemo.R;
 import cn.roc.rocdemo.view.LabelView.LabelView;
 

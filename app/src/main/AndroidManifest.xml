@@ -15,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/base_NoActionBar">
-        <activity android:name=".Activity.MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,33 +23,35 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.OkgoActivity"
+            android:name=".activity.OkgoActivity"
             android:theme="@style/base_NoActionBar" />
         <activity
-            android:name=".Activity.DialogActivity"
+            android:name=".activity.DialogActivity"
             android:theme="@style/base_NoActionBar" />
         <activity
-            android:name=".Activity.SelectPhotoActivity"
+            android:name=".activity.SelectPhotoActivity"
             android:theme="@style/base_NoActionBar" />
         <activity
-            android:name=".Activity.CoordinatorLayout"
+            android:name=".activity.CoordinatorLayout"
             android:theme="@style/base_NoActionBar" />
         <activity
-            android:name=".Activity.PopTest"
+            android:name=".activity.PopTest"
             android:theme="@style/base_NoActionBar" />
-        <activity android:name=".Activity.OkHttpFinalActivity" />
-        <activity android:name=".Activity.RecyclerViewAddHead" />
-        <activity android:name=".Activity.QrCodeActivity" />
-        <activity android:name=".Activity.NineGongGeAcitivy" />
-        <activity android:name=".Activity.TransitionOneActivity" />
-        <activity android:name=".Activity.TransitionTwoActivity" />
-        <activity android:name=".Activity.WechatPopupActivity" />
-        <activity android:name=".Activity.HorizontalScrollViewActivity" />
-        <activity android:name=".Activity.ShareNineImageActivity" />
-        <activity android:name=".Activity.NiceLabelActivity" />
-        <activity android:name=".Activity.SocketTestActivity" />
-        <activity android:name=".Activity.FileOperationActivity"></activity>
-        <activity android:name=".Activity.MobikeTagActivity"></activity>
+        <activity android:name=".activity.OkHttpFinalActivity" />
+        <activity android:name=".activity.RecyclerViewAddHead" />
+        <activity android:name=".activity.QrCodeActivity" />
+        <activity android:name=".activity.NineGongGeAcitivy" />
+        <activity android:name=".activity.TransitionOneActivity" />
+        <activity android:name=".activity.TransitionTwoActivity" />
+        <activity android:name=".activity.WechatPopupActivity" />
+        <activity android:name=".activity.HorizontalScrollViewActivity" />
+        <activity android:name=".activity.ShareNineImageActivity" />
+        <activity android:name=".activity.NiceLabelActivity" />
+        <activity android:name=".activity.SocketTestActivity" />
+        <activity android:name=".activity.FileOperationActivity"></activity>
+        <activity android:name=".activity.MobikeTagActivity"></activity>
+        <activity android:name=".activity.RandomPositionActivity"></activity>
+        <activity android:name=".activity.Tag3DActivity"></activity>
     </application>
 
 </manifest>

@@ -29,5 +29,7 @@
     <color name="click_bg">#c7c7c7</color>
     <color name="menu_bg">#2b2b2b</color>
     <color name="menu_click_bg">#515151</color>
+    <color name="tagLight">#b1c914</color>
+    <color name="tagDark">#206fa1</color>
 
 </resources>

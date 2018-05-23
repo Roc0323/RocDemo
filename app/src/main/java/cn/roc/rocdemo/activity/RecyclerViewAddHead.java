@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import cn.roc.rocdemo.R;
 import cn.roc.rocdemo.utils.ImgDataUtil;
 import cn.roc.rocrecyclerviewlib.Divider.BaseItemDecoration;
+import cn.roc.rocrecyclerviewlib.HeaderAndFooter.HeaderAndFooterRecyclerView;
 import cn.roc.rocrecyclerviewlib.HeaderAndFooter.OnItemClickListener;
 import cn.roc.rocrecyclerviewlib.HeaderAndFooter.OnItemLongClickListener;
 import cn.roc.rocrecyclerviewlib.LayoutManager.WZMLinearLayoutManager;
@@ -23,7 +24,7 @@ import cn.roc.rocrecyclerviewlib.SimpleAdapter.SimpleAdapter;
 import cn.roc.rocrecyclerviewlib.SimpleAdapter.ViewHolder;
 
 public class RecyclerViewAddHead extends AppCompatActivity {
-    private PullToLoadRecyclerView rcv;
+    private HeaderAndFooterRecyclerView rcv;
     private ArrayList<String> imgs;
     private Handler handler;
 
@@ -37,7 +38,7 @@ public class RecyclerViewAddHead extends AppCompatActivity {
     }
 
     private void initView(){
-        rcv = (PullToLoadRecyclerView) findViewById(R.id.rcv);
+        rcv = (HeaderAndFooterRecyclerView) findViewById(R.id.rcv);
         rcv.setLayoutManager(new WZMLinearLayoutManager(WZMLinearLayoutManager.VERTICAL));
 //        设置适配器，封装后的适配器只需要实现一个函数
         rcv.setAdapter(new SimpleAdapter<String>(this, imgs, R.layout.item_test) {
@@ -47,32 +48,32 @@ public class RecyclerViewAddHead extends AppCompatActivity {
             }
         });
 //        设置刷新监听
-        rcv.setOnRefreshListener(new OnRefreshListener() {
-            @Override
-            public void onStartRefreshing() {
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        imgs.clear();
-                        imgs.addAll(ImgDataUtil.getImgDatas());
-                        rcv.completeRefresh();
-                    }
-                }, 1000);
-            }
-        });
-//        设置加载监听
-        rcv.setOnLoadListener(new OnLoadListener() {
-            @Override
-            public void onStartLoading(int skip) {
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        imgs.addAll(ImgDataUtil.getImgDatas());
-                        rcv.completeLoad();
-                    }
-                }, 1000);
-            }
-        });
+//        rcv.setOnRefreshListener(new OnRefreshListener() {
+//            @Override
+//            public void onStartRefreshing() {
+//                handler.postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        imgs.clear();
+//                        imgs.addAll(ImgDataUtil.getImgDatas());
+//                        rcv.completeRefresh();
+//                    }
+//                }, 1000);
+//            }
+//        });
+////        设置加载监听
+//        rcv.setOnLoadListener(new OnLoadListener() {
+//            @Override
+//            public void onStartLoading(int skip) {
+//                handler.postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        imgs.addAll(ImgDataUtil.getImgDatas());
+//                        rcv.completeLoad();
+//                    }
+//                }, 1000);
+//            }
+//        });
 //        设置分割线
         rcv.addItemDecoration(new BaseItemDecoration(this,R.color.white));
 

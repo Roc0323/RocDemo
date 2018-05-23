@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initView();
     }
     private void initView(){
-        findViewById(R.id.btn_okgo).setOnClickListener(this);
         findViewById(R.id.btn_dialog).setOnClickListener(this);
         findViewById(R.id.btn_mine_select_photo).setOnClickListener(this);
         findViewById(R.id.btn_mine_coordinator_layout).setOnClickListener(this);
@@ -35,16 +34,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_mobike_tags).setOnClickListener(this);
         findViewById(R.id.btn_3d_tag).setOnClickListener(this);
         findViewById(R.id.btn_random_position).setOnClickListener(this);
+        findViewById(R.id.btn_mine_glide_use).setOnClickListener(this);
+
     }
 
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btn_okgo:
-                Intent intent=new Intent(this,OkgoActivity.class);
-                startActivity(intent);
-                break;
             case R.id.btn_dialog:
                 Intent intent_dialog=new Intent(this,DialogActivity.class);
                 startActivity(intent_dialog);
@@ -54,15 +51,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent_select);
                 break;
             case R.id.btn_mine_coordinator_layout:
-                Intent intent_coordinator=new Intent(this,CoordinatorLayout.class);
-                startActivity(intent_coordinator);
+//                Intent intent_coordinator=new Intent(this,CoordinatorLayout.class);
+//                startActivity(intent_coordinator);
                 break;
             case R.id.btn_mine_pop_test:
                 Intent intent_pop=new Intent(this,PopTest.class);
                 startActivity(intent_pop);
                 break;
             case R.id.btn_okhttp:
-                Intent intent_okhttp=new Intent(this,OkHttpFinalActivity.class);
+                Intent intent_okhttp=new Intent(this,OkHttpUseActivity.class);
                 startActivity(intent_okhttp);
                 break;
             case R.id.btn_add_head:
@@ -74,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent_qrcode);
                 break;
             case R.id.btn_nine_gongge:
-                Intent intent_nine_gongge=new Intent(this,NineGongGeAcitivy.class);
+                Intent intent_nine_gongge=new Intent(this,NineGongGeSelect.class);
                 startActivity(intent_nine_gongge);
                 break;
             case R.id.btn_activity_transition_animation:
@@ -116,6 +113,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_random_position:
                 Intent intent_random_position=new Intent(this,RandomPositionActivity.class);
                 startActivity(intent_random_position);
+                break;
+            case R.id.btn_mine_glide_use:
+                Intent intent_glide_use=new Intent(this,GlideUseActivity.class);
+                startActivity(intent_glide_use);
                 break;
         }
     }

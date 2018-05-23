@@ -23,9 +23,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.OkgoActivity"
-            android:theme="@style/base_NoActionBar" />
-        <activity
             android:name=".activity.DialogActivity"
             android:theme="@style/base_NoActionBar" />
         <activity
@@ -37,7 +34,6 @@
         <activity
             android:name=".activity.PopTest"
             android:theme="@style/base_NoActionBar" />
-        <activity android:name=".activity.OkHttpFinalActivity" />
         <activity android:name=".activity.RecyclerViewAddHead" />
         <activity android:name=".activity.QrCodeActivity" />
         <activity android:name=".activity.NineGongGeAcitivy" />
@@ -52,6 +48,11 @@
         <activity android:name=".activity.MobikeTagActivity"></activity>
         <activity android:name=".activity.RandomPositionActivity"></activity>
         <activity android:name=".activity.Tag3DActivity"></activity>
+        <activity android:name=".activity.NineGongGeSelect"></activity>
+        <activity android:name=".activity.NineGongGeActivity2"></activity>
+        <activity android:name=".activity.GlideUseActivity"></activity>
+        <activity android:name=".activity.OkHttpUseActivity"></activity>
+        <activity android:name=".net.DownloadMgrActivity"></activity>
     </application>
 
 </manifest>

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context="cn.roc.rocdemo.activity.RecyclerViewAddHead">
 
-    <cn.roc.rocrecyclerviewlib.PullToLoad.PullToLoadRecyclerView
+    <cn.roc.rocrecyclerviewlib.HeaderAndFooter.HeaderAndFooterRecyclerView
         android:id="@+id/rcv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

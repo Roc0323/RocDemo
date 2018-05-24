@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_3d_tag).setOnClickListener(this);
         findViewById(R.id.btn_random_position).setOnClickListener(this);
         findViewById(R.id.btn_mine_glide_use).setOnClickListener(this);
+        findViewById(R.id.btn_circle_indicator).setOnClickListener(this);
 
     }
 
@@ -117,6 +118,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_mine_glide_use:
                 Intent intent_glide_use=new Intent(this,GlideUseActivity.class);
                 startActivity(intent_glide_use);
+                break;
+            case R.id.btn_circle_indicator:
+                Intent intent_circle_indicator=new Intent(this,CircleIndicatorActivity.class);
+                startActivity(intent_circle_indicator);
                 break;
         }
     }

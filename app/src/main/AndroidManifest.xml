@@ -53,6 +53,10 @@
         <activity android:name=".activity.GlideUseActivity"></activity>
         <activity android:name=".activity.OkHttpUseActivity"></activity>
         <activity android:name=".net.DownloadMgrActivity"></activity>
+        <activity android:name=".activity.CircleIndicatorActivity"></activity>
+        <activity android:name=".activity.CircleIndicatorOne"></activity>
+        <activity android:name=".activity.CircleIndicatorTwo"></activity>
+        <activity android:name=".activity.CircleIndicatorThree"></activity>
     </application>
 
 </manifest>

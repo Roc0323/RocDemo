@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/btn_circle_indicator_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:textColor="#333333"
+        android:text="第一种效果"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"/>
+    <TextView
+        android:id="@+id/btn_circle_indicator_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:textColor="#333333"
+        android:text="第二种效果"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"/>
+    <TextView
+        android:id="@+id/btn_circle_indicator_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:textColor="#333333"
+        android:text="第三种效果"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"/>
+
+
+</LinearLayout>

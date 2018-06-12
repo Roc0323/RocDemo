@@ -95,6 +95,7 @@ public class GlideUseActivity extends Activity implements View.OnClickListener{
                 .scale(ScaleMode.CENTER_CROP)
                 .into(iv_test1);
 
+
         ImageLoaders.with(this)
                 .url(url1)
                 .placeHolder(R.mipmap.ic_launcher)

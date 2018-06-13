@@ -57,6 +57,8 @@
         <activity android:name=".activity.CircleIndicatorOne"></activity>
         <activity android:name=".activity.CircleIndicatorTwo"></activity>
         <activity android:name=".activity.CircleIndicatorThree"></activity>
+        <activity android:name=".activity.FileListBtnActivity"></activity>
+        <activity android:name=".activity.FileDisplayActivity"></activity>
     </application>
 
 </manifest>

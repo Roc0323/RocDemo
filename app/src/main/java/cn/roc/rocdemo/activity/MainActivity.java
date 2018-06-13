@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_random_position).setOnClickListener(this);
         findViewById(R.id.btn_mine_glide_use).setOnClickListener(this);
         findViewById(R.id.btn_circle_indicator).setOnClickListener(this);
+        findViewById(R.id.btn_open_file).setOnClickListener(this);
 
     }
 
@@ -122,6 +123,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_circle_indicator:
                 Intent intent_circle_indicator=new Intent(this,CircleIndicatorActivity.class);
                 startActivity(intent_circle_indicator);
+                break;
+            case R.id.btn_open_file:
+                Intent intent_open_file=new Intent(this,FileListBtnActivity.class);
+                startActivity(intent_open_file);
                 break;
         }
     }

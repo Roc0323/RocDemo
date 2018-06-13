@@ -32,6 +32,7 @@ public class RocApplication extends Application {
         initImageLoader();
         ImageLoaders.init(getApplicationContext());
 
+
         //持久化存储cookie
         ClearableCookieJar cookieJar =
                 new PersistentCookieJar(new SetCookieCache(), new SharedPrefsCookiePersistor(getApplicationContext()));

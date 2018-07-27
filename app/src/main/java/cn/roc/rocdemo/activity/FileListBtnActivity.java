@@ -2,11 +2,15 @@ package cn.roc.rocdemo.activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
+import java.io.File;
+
 import cn.roc.rocdemo.R;
+import cn.roc.rocdemo.utils.OpenFileUtils;
 
 /**
  * Created by Roc on 2018/6/13.
@@ -22,6 +26,7 @@ public class FileListBtnActivity extends Activity implements View.OnClickListene
         findViewById(R.id.btn_ppt).setOnClickListener(this);
         findViewById(R.id.btn_pdf).setOnClickListener(this);
         findViewById(R.id.btn_txt).setOnClickListener(this);
+        findViewById(R.id.btn_sanfang).setOnClickListener(this);
     }
 
     @Override
@@ -51,6 +56,11 @@ public class FileListBtnActivity extends Activity implements View.OnClickListene
                 Intent intent_txt=new Intent(this,FileDisplayActivity.class);
                 intent_txt.putExtra("file_path","/storage/emulated/0/test.txt");
                 startActivity(intent_txt);
+                break;
+            case R.id.btn_sanfang:
+                // Android获取一个用于打开Word文件的intent
+                Intent intent=OpenFileUtils.openFile("/storage/emulated/0/test.xlsx");
+                startActivity(intent);
                 break;
         }
 

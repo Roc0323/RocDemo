@@ -6,6 +6,20 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <!--危险权限-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!--一般权限-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <!--定位权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
 
     <application
         android:name=".RocApplication"
@@ -59,6 +73,11 @@
         <activity android:name=".activity.CircleIndicatorThree"></activity>
         <activity android:name=".activity.FileListBtnActivity"></activity>
         <activity android:name=".activity.FileDisplayActivity"></activity>
+        <activity android:name=".activity.PermissionActivity"></activity>
+        <activity android:name=".activity.PermissionsActivity"></activity>
+        <activity android:name=".activity.PermissionActivity2"></activity>
+        <activity android:name=".activity.X5WebviewActivity"></activity>
+        <activity android:name=".activity.popup.WechatLongClickActivity"></activity>
     </application>
 
 </manifest>

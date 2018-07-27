@@ -38,5 +38,12 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:text="打开本地txt文件"/>
+    <Button
+        android:id="@+id/btn_sanfang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="第三方应用打开本地文件"/>
 
 </LinearLayout>

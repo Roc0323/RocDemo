@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import cn.roc.rocdemo.R;
+import cn.roc.rocdemo.activity.popup.WechatLongClickActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -37,7 +38,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_mine_glide_use).setOnClickListener(this);
         findViewById(R.id.btn_circle_indicator).setOnClickListener(this);
         findViewById(R.id.btn_open_file).setOnClickListener(this);
-
+        findViewById(R.id.btn_permission_check1).setOnClickListener(this);
+        findViewById(R.id.btn_permission_check2).setOnClickListener(this);
+        findViewById(R.id.btn_x5_webview).setOnClickListener(this);
+        findViewById(R.id.btn_wechat_pup).setOnClickListener(this);
     }
 
 
@@ -127,6 +131,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_open_file:
                 Intent intent_open_file=new Intent(this,FileListBtnActivity.class);
                 startActivity(intent_open_file);
+                break;
+            case R.id.btn_permission_check1:
+                Intent intent_permission1=new Intent(this,PermissionActivity.class);
+                startActivity(intent_permission1);
+                break;
+            case R.id.btn_permission_check2:
+                Intent intent_permission2=new Intent(this,PermissionActivity2.class);
+                startActivity(intent_permission2);
+                break;
+            case R.id.btn_x5_webview:
+                Intent intent_x5_webview=new Intent(this,X5WebviewActivity.class);
+                startActivity(intent_x5_webview);
+                break;
+            case R.id.btn_wechat_pup:
+                Intent intent_wechat_click=new Intent(this,WechatLongClickActivity.class);
+                startActivity(intent_wechat_click);
                 break;
         }
     }

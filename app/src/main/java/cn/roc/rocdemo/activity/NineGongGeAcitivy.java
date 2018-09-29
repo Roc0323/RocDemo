@@ -7,6 +7,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +18,6 @@ import cn.roc.rocdemo.R;
 import cn.roc.rocdemo.event.EmptyEvent;
 import cn.roc.rocdemo.event.NineGongGeEvent;
 import cn.roc.rocdemo.imagewatcher.ImageWatcher;
-import de.greenrobot.event.EventBus;
 
 public class NineGongGeAcitivy extends AppCompatActivity {
 

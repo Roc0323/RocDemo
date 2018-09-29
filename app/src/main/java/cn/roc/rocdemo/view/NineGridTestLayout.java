@@ -11,11 +11,13 @@ import android.widget.Toast;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.util.List;
 
 import cn.roc.rocdemo.event.NineGongGeEvent;
 import cn.roc.rocdemo.utils.ImageLoaderUtil;
-import de.greenrobot.event.EventBus;
+
 
 /**
  * 描述：

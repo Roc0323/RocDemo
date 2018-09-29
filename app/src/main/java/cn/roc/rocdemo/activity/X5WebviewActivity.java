@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.KeyEvent;
 
 import com.tencent.smtt.sdk.ValueCallback;
 import com.tencent.smtt.sdk.WebChromeClient;
@@ -18,6 +19,7 @@ import cn.roc.rocdemo.custom_view.x5webview.X5WebView;
 
 public class X5WebviewActivity extends Activity{
     private X5WebView webView;
+    private String url="";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -57,9 +59,20 @@ public class X5WebviewActivity extends Activity{
             }
 
         });
-        webView.loadUrl("http://111.231.37.236/wxapp/forApp/messageList.html?id=7504&token=c589e4a7148abfc7d019e7cd0f3428a0&userCollectionId=11476");
+        url = "http://wm.egridcloud.com/appStatic/app/app5/customer?sessionId=f4c073e4-a825-4570-b873-e67a89b81b96&personName=%E4%BB%BB%E4%BC%9F&dealerId=10001001&empId=WM0001009&dealerName=%E5%8C%97%E4%BA%AC%E5%A8%81%E9%A9%AC%E7%94%A8%E6%88%B7%E4%B8%AD%E5%BF%83%E4%BA%94%E6%96%B9%E5%A4%A9%E9%9B%85%E5%BA%97&positionName=%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E7%BB%8F%E7%90%86&positionCode=YHTYJL";
+        webView.loadUrl(url);
 
     }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK && webView.canGoBack()) {
+            webView.goBack();
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
 
     /**
      * 确保注销配置能够被释放

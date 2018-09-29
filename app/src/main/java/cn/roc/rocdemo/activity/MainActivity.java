@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_permission_check2).setOnClickListener(this);
         findViewById(R.id.btn_x5_webview).setOnClickListener(this);
         findViewById(R.id.btn_wechat_pup).setOnClickListener(this);
+        findViewById(R.id.btn_list_count_down).setOnClickListener(this);
     }
 
 
@@ -147,6 +148,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_wechat_pup:
                 Intent intent_wechat_click=new Intent(this,WechatLongClickActivity.class);
                 startActivity(intent_wechat_click);
+                break;
+            case R.id.btn_list_count_down:
+                Intent intent_count_down=new Intent(this,ListCountDownActivity.class);
+                startActivity(intent_count_down);
                 break;
         }
     }

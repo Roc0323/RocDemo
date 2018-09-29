@@ -86,6 +86,7 @@
         <activity android:name=".activity.PermissionActivity2"></activity>
         <activity android:name=".activity.X5WebviewActivity"></activity>
         <activity android:name=".activity.popup.WechatLongClickActivity"></activity>
+        <activity android:name=".activity.ListCountDownActivity"></activity>
     </application>
 
 </manifest>

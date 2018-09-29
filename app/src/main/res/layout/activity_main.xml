@@ -233,6 +233,18 @@
                 android:layout_height="wrap_content"
                 android:text="仿微信长按弹框"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_list_count_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="列表倒计时"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
